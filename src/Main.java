@@ -37,4 +37,20 @@ public class Main {
 
         selectionSort(V, iMenor + 1, iMaior); //Comeca novamente, mas agora com o proximo indice
     }
+
+    /*
+        InsertionSort:
+
+        Explicação...
+    */
+
+    public static void insertionSort(int[]V, int tamV) {
+
+        int i = 0;
+        int j = 1;
+        int aux = 0;
+
+        //Continuar...
+        
+    }
 }
