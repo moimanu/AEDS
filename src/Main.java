@@ -41,8 +41,6 @@ public class Main {
     /*
         InsertionSort:
 
-        Explicação...
-
         O objetivo do código é fixar uma chave e comparar se os valores dos índices anteriores são maiores que tal chave. A partir do momento que se identifica um valor maior, ocorre uma "quase troca", onde a chave é armazenada em uma variável auxiliar, até que se encontre um valor menor e quebrar o laço.
     */
 
