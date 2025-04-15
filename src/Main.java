@@ -42,15 +42,26 @@ public class Main {
         InsertionSort:
 
         Explicação...
+
+        O objetivo do código é fixar uma chave e comparar se os valores dos índices anteriores são maiores que tal chave. A partir do momento que se identifica um valor maior, ocorre uma "quase troca", onde a chave é armazenada em uma variável auxiliar, até que se encontre um valor menor e quebrar o laço.
     */
 
     public static void insertionSort(int[]V, int tamV) {
 
-        int i = 0;
-        int j = 1;
-        int aux = 0;
+        int i = 0; //A variável "i" se refere ao valor exclusivamente anterior à chave a ser comparada (atual) 
+        int j = 1; //A variável "j" se refere ao índice da chave a ser comparada (atual)
+        int aux = 0; //Será utilizada para ajudar na realização da troca
 
-        //Continuar...
-        
+        while(j < tamV) { //Começa a partir do segundo item, até o último.
+
+            aux = V[j]; //Já armazena o valor da chave a ser conferida, de antemão
+            i = j - 1; //Já indica o índice anterior a chave
+
+            while((i >= 0) && ( 
+                
+            )
+            
+            
+        }
     }
 }
