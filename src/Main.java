@@ -3,7 +3,7 @@ public class Main {
     public static void main(String[] args) {
 
         int vetor[] = {2,0,3,4,1,6,5,7};
-        selectionSort(vetor, 0, 7);
+        insertionSort(vetor, 8);
 
         for (int i = 0; i < vetor.length; i++) {
             System.out.println(vetor[i]);
@@ -48,7 +48,7 @@ public class Main {
 
     public static void insertionSort(int[]V, int tamV) {
 
-        int i = 0; //A variável "i" se refere ao valor exclusivamente anterior à chave a ser comparada (atual) 
+        int i = 0; //A variável "i" se refere ao valor exclusivamente anterior à chave a ser comparada (atual)
         int j = 1; //A variável "j" se refere ao índice da chave a ser comparada (atual)
         int aux = 0; //Será utilizada para ajudar na realização da troca
 
@@ -57,11 +57,13 @@ public class Main {
             aux = V[j]; //Já armazena o valor da chave a ser conferida, de antemão
             i = j - 1; //Já indica o índice anterior a chave
 
-            while((i >= 0) && ( 
-                
-            )
-            
-            
+            while((i >= 0) && (V[i] > aux)) { //Para cada item anterior à chave, confere se é válido e se é maior que o valor da chave
+                V[i+1] = V[i]; //Se sim, o anterior é atribuído ao atual
+                i--; //Passa pro anterior
+            }
+
+            V[i+1] = aux; //Após sair do laço, o espaço que ficou vazio recebe o valor da chave (guardado em "aux")
+            j++; //Vai para o próximo indice do vetor
         }
     }
 }
