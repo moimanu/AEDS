@@ -64,4 +64,27 @@ public class Main {
             j++; //Vai para o próximo indice do vetor
         }
     }
+
+    /*
+        BubbleSort:
+
+        Explicação...
+
+        O que o bubble faz? Tenho que criar um laço para percorrer o vetor inteiro.
+        
+    */
+
+    public static void bubbleSort(int[]V, int n) {
+
+        for(int fim = n - 1; fim >= 0; fim--) {
+
+            for(int i = 0; i < n - 1; i++) {
+
+                if(V[i] > V[i+1])
+                
+            }
+            
+        }
+        
+    }
 }
