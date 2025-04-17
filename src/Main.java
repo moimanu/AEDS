@@ -76,15 +76,16 @@ public class Main {
 
     public static void bubbleSort(int[]V, int n) {
 
-        for(int fim = n - 1; fim >= 0; fim--) {
+        for(int i = n - 1; i >= 0; i--) {
 
-            for(int i = 0; i < n - 1; i++) {
+            for(int j = 1; j < n - 1; j++) {
 
-                if(V[i] > V[i+1])
-                
+                if(V[j-1] > V[i]) {
+                    aux = V[i-1];
+                    V[i-1] = V[i];
+                    V[i] = aux;
+                }
             }
-            
         }
-        
     }
 }
