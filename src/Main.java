@@ -68,8 +68,7 @@ public class Main {
     /*
         BubbleSort:
 
-
-        
+        Para cada item, confere se o item atual é maior que o próximo para realizar a troca. Ele pode realizar a troca diversas vezes até que se conclua o objetivo. Esse metodo é estável, ou seja, só troca se for maior.
     */
 
     public static void bubbleSort(int[]V, int n) { //Recebe um vetor e o seu respectivo tamanho
