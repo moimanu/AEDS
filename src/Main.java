@@ -80,10 +80,10 @@ public class Main {
 
             for(int j = 1; j < n - 1; j++) {
 
-                if(V[j-1] > V[i]) {
-                    aux = V[i-1];
-                    V[i-1] = V[i];
-                    V[i] = aux;
+                if(V[j-1] > V[j]) {
+                    aux = V[j-1];
+                    V[j-1] = V[j];
+                    V[j] = aux;
                 }
             }
         }
