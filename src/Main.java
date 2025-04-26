@@ -3,7 +3,7 @@ public class Main {
     public static void main(String[] args) {
 
         int vetor[] = {2,0,3,4,1,6,5,7};
-        insertionSort(vetor, 8);
+        bubbleSort(vetor, 8);
 
         for (int i = 0; i < vetor.length; i++) {
             System.out.println(vetor[i]);
@@ -68,20 +68,18 @@ public class Main {
     /*
         BubbleSort:
 
-        Explicação...
 
-        O que o bubble faz? Tenho que criar um laço para percorrer o vetor inteiro.
         
     */
 
-    public static void bubbleSort(int[]V, int n) {
+    public static void bubbleSort(int[]V, int n) { //Recebe um vetor e o seu respectivo tamanho
 
-        for(int i = n - 1; i >= 0; i--) {
+        for(int i = n - 1; i >= 0; i--) { //Percorre o vetor inteiro, item por item
 
-            for(int j = 1; j < n - 1; j++) {
+            for(int j = 1; j < n - 1; j++) { //Percorre os itens restantes do vetor
 
-                if(V[j-1] > V[j]) {
-                    aux = V[j-1];
+                if(V[j-1] > V[j]) { //Se o valor do indice anterior a chave for maior que a chave
+                    int aux = V[j-1]; //Realiza a troca
                     V[j-1] = V[j];
                     V[j] = aux;
                 }
