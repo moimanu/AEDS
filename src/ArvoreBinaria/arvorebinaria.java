@@ -1,3 +1,5 @@
+package ArvoreBinaria;
+
 public class arvorebinaria {
 
     public static void main(String[] args) {
